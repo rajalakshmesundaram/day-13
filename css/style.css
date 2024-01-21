@@ -1,0 +1,34 @@
+ .required-label::after {
+     content: " *";
+     color: red;
+ }
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align:left;
+}
+
+.rating>span {
+    display: inline-block;
+    position: relative;
+    width: 2em;
+}
+
+.rating>span:hover:before,
+.rating>span:hover~span:before {
+    content: "\2605";
+    /* Unicode character for a filled star */
+    position: absolute;
+    color: gold;
+}
+
+.rating>span:before {
+    content: "\2606";
+    /* Unicode character for an outlined star */
+    position: absolute;
+    color: gold;
+}
+ .color
+ {
+    background-color:rgba(207, 204, 203, 0.438);
+ }
